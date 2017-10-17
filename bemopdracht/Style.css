@@ -1,0 +1,75 @@
+html, body {
+  font-family: sans-serif;
+  background-color: rgba(16, 24, 20, 0.41);
+}
+
+html, body, div, h3, h4, p {
+  margin: 0;
+  padding: 0;
+
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  background: darkgreen;
+}
+
+.albums {
+  width: 500px;
+  float: left;
+  height: 500px;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+}
+
+.albums__article {
+  font-size: 0.8em;
+  position: relative;
+  margin-top: 0;
+
+  padding: 1em;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.7);
+  animation: naar-beneden 1s forwards;
+
+}
+
+.albums:hover .albums__article {
+  margin-top: -506px;
+  cursor: pointer;
+  animation: naar-boven 1s forwards;
+}
+
+
+@keyframes naar-boven{
+    10%{ margin-top: 0; }
+    30%{ margin-top: -156px; }
+    50%{ margin-top: -250px; }
+    70%{ margin-top: -350px; }
+    90%{ margin-top: -450px; }
+    20%, 40%, 60%, 80%, 100%{ margin-top: -505px; }
+}
+
+@keyframes naar-beneden{
+    10%{ margin-top: -305px; }
+    30%{ margin-top: -152px; }
+    50%{ margin-top: -76px; }
+    70%{ margin-top: -83px; }
+    90%{ margin-top: -19px; }
+    20%, 40%, 60%, 80%, 100%{ margin-top: 0px; }
+}
+
+.albums__artist, .albums__record{
+  padding: .2rem;
+}
+
+.albums__image {
+  width: 500px;
+  height: 500px;
+}
+
+.validatie {
+  clear: left;
+}
