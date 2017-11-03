@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Palindroom</title>
+  </head>
+  <body>
+<h1>Palindroom opdracht</h1><br><br>
+
+<div class="container">
+    <input type="text" id="text" onkeyup="palindroom()" autofocus placeholder="Typ hier een bericht in"><br>
+    <span id="result"></span>
+</div>
+
+<!-- CSS -->
+<style>
+  html, body {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(121, 119, 120);
+    text-align: center;
+  }
+
+  .container {
+      height: 100px;
+      width: 300px;
+      text-align: center;
+      margin: 0 auto;
+      background-color: rgba(58, 152, 166, 0.6);
+  }
+
+  #text {
+    text-align: center;
+    margin: 10px auto;
+  }
+  #result {
+    text-align: center;
+    margin: 10 auto;
+    font-size: 25px;
+
+  }
+</style>
+    <script>
+
+
+
+      function palindroom(str) {
+
+        let text = document.getElementById("text").value;
+        let display = "";
+        const charCounts = {};
+
+        for (const ch of text.toLowerCase()) {
+          if(/[^a-z]/.test(ch)) {
+            continue
+          }
+          display += ch;
+          if (charCounts[ch] ) {
+            charCounts[ch] += 1;
+          } else {
+            charCounts[ch] = 1;
+          }
+
+
+      }
+      let oddCounts = 0;
+      for (const prop in charCounts) {
+        if (charCounts[prop] % 2 === 1) {
+          oddCounts += 1;
+        }
+      }
+
+      let result = document.getElementById('result')
+      console.log(charCounts);
+      // console.log(oddCounts > 1 ? false:true);
+      if (oddCounts == true) {
+        result.innerHTML = "Dit is een Palindroom";
+
+      } else  {
+        result.innerHTML = "Dit is geen Palindroom";
+      }
+
+
+      }
+
+
+
+
+    </script>
+
+  </body>
+</html>
 
