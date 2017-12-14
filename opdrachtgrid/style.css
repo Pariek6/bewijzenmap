@@ -53,14 +53,7 @@ html, body {
   font-size: 100%;
 }
 
-/*.header__list a {
-   text-decoration: none;
-   list-style-type: none;
-   font-family: 'Oswald', sans-serif;
-   color: black;
 
-  display: inline-block;
-}*/
 
 .content {
   display: grid;
@@ -132,10 +125,12 @@ html, body {
 .text__header {
   grid-column: span 8;
     color: #f8a230;
+    border-bottom: 3px dashed #f8a230;
 }
 
 .buttons__header {
   grid-column: span 4;
+  border-bottom: 3px dashed #f8a230;
   display: grid;
   grid-template-columns: repeat(6, 1fr)
 }
@@ -173,6 +168,7 @@ html, body {
   grid-column: span 3;
   display: grid;
   grid-template-columns: 1fr 3fr;
+    border-bottom: 3px dashed #f8a230;
 }
 
 .item1 span {
@@ -187,6 +183,7 @@ p.fa.fa-refresh {
   grid-column: span 3;
   display: grid;
   grid-template-columns: 1fr 3fr;
+    border-bottom: 3px dashed #f8a230;
 }
 
 .item2 span {
@@ -201,6 +198,7 @@ p.fa.fa-clock-o {
   grid-column: span 3;
   display: grid;
   grid-template-columns: 1fr 3fr;
+    border-bottom: 3px dashed #f8a230;
 }
 
 .item3 span {
@@ -215,6 +213,7 @@ p.fa.fa-cutlery {
   grid-column: span 3;
   display: grid;
   grid-template-columns: 1fr;
+    border-bottom: 3px dashed #f8a230;
 }
 
 .item4 img {
@@ -223,6 +222,8 @@ p.fa.fa-cutlery {
 }
 
 .recept__beschrijving {
+
+
   grid-column: span 12;
   font-size: 14px;
   font-weight: bold;
@@ -238,8 +239,3 @@ p.fa.fa-cutlery {
 }
 
 
-
-
-
-
-/*# sourceMappingURL=style.css.map */
