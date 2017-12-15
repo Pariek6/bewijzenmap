@@ -8,9 +8,14 @@ body{
     overflow-x: hidden;
 }
 
+p {
+  grid-column: 1/4;
+  font-size: 20px;
+}
+
 /*Button to activate the animation*/
 #button{
-    grid-column: 3/4;
+    grid-column: 2/4;
 }
 
 /*All the styling for the squares*/
