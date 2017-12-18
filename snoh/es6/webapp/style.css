@@ -1,0 +1,49 @@
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  background: url("https://www.nasa.gov/sites/default/files/thumbnails/image/p1639ay-goodss-160930.jpg");
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100%;
+
+  box-sizing: border-box;
+  padding: 0;
+  top: 0;
+  color: white;
+}
+
+.planeet {
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  padding: 0;
+}
+
+.images__planets {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#container__planet:hover{
+    color: #424242;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(3);
+  -ms-transform: scale(3); /* IE 9 */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+}
+
+#container__planets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
