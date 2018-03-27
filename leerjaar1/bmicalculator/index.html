@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<fieldset>
+    <legend><strong>BMI calculator</strong></legend>
+    <p>Lengte in cm: </p><input type="text" id="lengte" name="lengte"> <br><br>
+    <p>Gewicht in kg: </p><input type="text" id="gewicht" name="gewicht"><br><br>
+    <input type="button" id="calculate" value="Bereken uw BMI">
+
+</fieldset>
+<div id="resultaat">
+
+</div>
+<footer>
+  <h2>Patrick Frumau, MD1A</h2>
+</footer>
+
+<script>
+
+
+        document.getElementById("calculate").addEventListener("click", ()=>{
+          gewicht = document.getElementById("gewicht");
+          lengte = document.getElementById("lengte");
+            ajax(gewicht.value, lengte.value);
+  });
+</script>
+<script src="ajax.js"></script>
+</body>
+</html>

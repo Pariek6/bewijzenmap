@@ -1,0 +1,32 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+fieldset {
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 10%;
+    border: 3px solid cornflowerblue;
+    color: antiquewhite;
+    background-color: rgba(118,148,249,0.7);
+    border-radius: 10px;
+}
+
+legend {
+    color: black
+}
+
+#resultaat {
+  width: 400px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+footer {
+  text-align: center;
+}
