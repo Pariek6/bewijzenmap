@@ -1,0 +1,21 @@
+html, body {
+  padding: 0;
+  margin: 0 auto;
+
+  background-color: rgb(133, 205, 178);
+}
+
+#container {
+  width: 900px;
+  height: 700px;
+  background-color: grey;
+  margin: 0 auto;
+
+  margin-top: 100px;
+  border-radius: 2px;
+}
+
+canvas {
+  margin: 0 auto;
+  text-align: center;
+}
