@@ -3,8 +3,8 @@ Die heb ik achter elkaar gezet op een manier waarop het nog enigzins een correct
 
 Dit is de code ervan:
 
-html:
+html: https://github.com/Pariek6/bewijzenmap/blob/master/leerjaar1/zingenerator/index.html
 
-css:
+css: https://github.com/Pariek6/bewijzenmap/blob/master/leerjaar1/zingenerator/style.css
 
-javascript:
+javascript: https://github.com/Pariek6/bewijzenmap/blob/master/leerjaar1/zingenerator/script.js
