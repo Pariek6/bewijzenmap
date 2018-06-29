@@ -41,12 +41,13 @@ function nextPrev(n) {
 
 function validateForm() {
   // This function deals with validation of the form fields
-  var x, y, i, valid = true;
+  var x, y, c, i, valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
+  // c = document.getElementsByClassName("custom-control-inline")
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
-    // If a field is empty...
+
     if (y[i].value == "") {
       // add an "invalid" class to the field:
         y[i].className += " invalid";
@@ -55,6 +56,20 @@ function validateForm() {
     }
 
   }
+  
+    // if (i == 1) {
+    //   valid = true;
+    // }
+    // else if(i == 3 && y[3].checked == false) {
+    //   valid = false;
+    //   y[i].className += " invalid";
+    //
+    // }
+    // If a field is empty...
+    // else
+
+
+
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
 
