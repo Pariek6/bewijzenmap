@@ -15,78 +15,593 @@
   <div class="container-fluid">
     <h2>Inlichtingen Formulier</h2>
     <form id="inschrijf_formulier" action="">
-      <div class="tab">
+
+      <!-- TAB 1  -->
+
+      <!-- <div class="tab" id="tab1">
 
         <div class="form-group">
           <h3 class="page1">Gegevens Student</h3>
         </div>
         <div class="form-group">
           <label class="sr-only" for="voornaam">Voornaam:</label>
-         <input type="text" placeholder="Voornaam" class="form-control" id="voornaam" oninput="this.className = 'form-control'">
+          <input type="text" placeholder="Voornaam" class="form-control" id="voornaam" oninput="this.className = 'form-control'">
         </div>
         <div class="form-group">
           <label class="sr-only" for="tussenvoegsel">Tussenvoegsel:</label>
-          <input type="text" placeholder="Tussenvoegsel" class="form-control"  id="tussenvoegsel" oninput="this.className = 'form-control'" >
+          <input type="text" name="extra" placeholder="Tussenvoegsel" class="form-control" id="tussenvoegsel" oninput="this.className = 'form-control'">
         </div>
         <div class="form-group">
           <label class="sr-only" for="achternaam">Achternaam:</label>
           <input type="text" placeholder="Achternaam" class="form-control" id="achternaam" oninput="this.className = 'form-control'">
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="customRadio1" name="example" >
-          <label class="custom-control-label" for="customRadio1">Man</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="customRadio2" name="example">
-          <label class="custom-control-label" for="customRadio2">Vrouw</label>
+        <div class="form-group">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio1" name="example">
+            <label class="custom-control-label" for="customRadio1">Man</label>
+          </div>
+
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio2" name="example">
+            <label class="custom-control-label" for="customRadio2">Vrouw</label>
+          </div>
         </div>
         <div class="form-group">
           <label class="sr-only" for="geboortedatum">Geboortedatum:</label>
           <input type="text" placeholder="Geboortedatum" class="form-control" id="geboortedatum" oninput="this.className = 'form-control'">
         </div>
-      </div>
+      </div> -->
 
-      <div class="tab">
+      <!-- TAB 2 -->
+
+      <!-- <div class="tab" id="tab2">
         <div class="form-group">
           <h3 class="page2">Welke opleiding volgt de leerling?</h3>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="customRadio3" name="example" >
-          <label class="custom-control-label" for="customRadio3">Man</label>
+
+
+
+        <div class="vmbo">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input niveau" id="vmbo" name="opleiding-niveau">
+            <label class="custom-control-label" for="vmbo">VMBO</label>
+          </div>
+          <p id="niveau" class="sub-vmbo"><strong>Niveau:</strong></p>
+          <div class="vmbo_niveau">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="bb" name="vmbo_niveau">
+              <label class="custom-control-label" for="bb">BB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="kb" name="vmbo_niveau">
+              <label class="custom-control-label" for="kb">KB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="gl" name="vmbo_niveau">
+              <label class="custom-control-label" for="gl">GL</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="tl" name="vmbo_niveau">
+              <label class="custom-control-label" for="tl">TL</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="lwt" name="vmbo_niveau">
+              <label class="custom-control-label" for="lwt">LWT</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="lwoo" name="vmbo_niveau">
+              <label class="custom-control-label" for="lwoo">LWOO</label>
+            </div>
+          </div>
+          <p id="sector" class="sub-vmbo"><strong>Sector:</strong></p>
+          <div class="vmbo_sector">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="eco" name="sector">
+              <label class="custom-control-label" for="eco">Economie</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="lb" name="sector">
+              <label class="custom-control-label" for="lb">Landbouw</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="tch" name="sector">
+              <label class="custom-control-label" for="tch">Techniek</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="z-w" name="sector">
+              <label class="custom-control-label" for="z-w">Zorg & Welzijn</label>
+            </div>
+          </div>
+
+
+          <p id="mvi_vraag">Heeft de leerling een keuzevak MVI gedaan?</p>
+          <div class="vmbo_extra">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="mvi-ja" name="mvi">
+              <label class="custom-control-label" for="mvi-ja">Ja</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="mvi-nee" name="mvi">
+              <label class="custom-control-label" for="mvi-nee">Nee</label>
+            </div>
+
+            <p id="mvi_vakken">Zo ja, welke:</p>
+            <div class="form-group">
+              <label for="comment"></label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <p class="diploma_behaald">Diploma behaald / te behalen op:</p>
+            <div class="form-group">
+              <label for="vmbo_diploma_behaald"></label>
+              <textarea class="form-control" rows="2" id="vmbo_diploma_behaald"></textarea>
+            </div>
+          </div>
         </div>
 
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="bb" name="example" >
-          <label class="custom-control-label" for="bb">BB</label>
+
+
+        <div class="havo-vwo">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="havo_ja" name="opleiding-niveau">
+            <label class="custom-control-label" for="havo_ja">HAVO</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="vwo_ja" name="opleiding-niveau">
+            <label class="custom-control-label" for="vwo_ja">VWO</label>
+          </div>
+
+          <p class="diploma_behaald">Diploma behaald / te behalen op:</p>
+          <div class="form-group">
+            <label for="vmbo_diploma_behaald"></label>
+            <textarea class="form-control" rows="2" id="vmbo_diploma_behaald"></textarea>
+          </div>
+          <p class="overgangsbewijs_havo-vwo">Overgangsbewijs van leerjaar
+            <input type="text" name="quantity"> naar leerjaar
+            <input type="text" name="quantity"></p>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="kb" name="example" >
-          <label class="custom-control-label" for="kb">KB</label>
+
+
+
+        <div class="mbo">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="mbo_ja" name="opleiding-niveau">
+            <label class="custom-control-label" for="mbo_ja">MBO</label>
+          </div><br>
+          <p class="mbo_header_1">Opleidingsniveau</p>
+          <div class="opleidings_niveau_mbo">
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="on1" name="sector">
+              <label class="custom-control-label" for="on1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="on2" name="sector">
+              <label class="custom-control-label" for="on2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="on3" name="sector">
+              <label class="custom-control-label" for="on3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="on4" name="sector">
+              <label class="custom-control-label" for="on4">4</label>
+            </div>
+          </div>
+          <p class="mbo_header_2">Leerweg:</p>
+          <div class="leerweg_mbo">
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="bol" name="leerweg">
+              <label class="custom-control-label" for="bol">BOL</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="bbl" name="leerweg">
+              <label class="custom-control-label" for="bbl">BBL</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="leerweg_anders" name="leerweg">
+              <label class="custom-control-label" for="leerweg_anders">Anders</label>
+            </div>
+          </div>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="gl" name="example" >
-          <label class="custom-control-label" for="gl">GL</label>
+
+      </div> -->
+
+      <!-- TAB 3 -->
+
+       <!-- <div class="tab" id="tab3">
+
+
+
+        <div class="indruk_leerling">
+
+
+          <div class="form-group">
+            <h3 class="page3">Indruk op school en bijzonderheden van de leerling</h3><br>
+          </div>
+
+          <div class="werkhouding_leerling">
+
+
+            <div class="werkhouding_leerling_title">
+              <p style="margin: 0;">Werkhouding</p>
+            </div>
+            <div class="leerling_punten">
+              <p>Concentratie:</p>
+            </div>
+
+
+            <div class="indruk_leerling_school">
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="con_1" name="concentratie">
+                <label class="custom-control-label" for="con_1">Goed</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="con_2" name="concentratie">
+                <label class="custom-control-label" for="con_2">Voldoende</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="con_3" name="concentratie">
+                <label class="custom-control-label" for="con_3">Zwak</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="con_4" name="concentratie">
+                <label class="custom-control-label" for="con_4">Onvoldoende</label>
+              </div>
+            </div><br>
+            <div class="leerling_punten">
+              <p>Werktempo:</p>
+            </div>
+
+
+            <div class="indruk_leerling_school">
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="wt_1" name="werktempo">
+                <label class="custom-control-label" for="wt_1">Goed</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="wt_2" name="werktempo">
+                <label class="custom-control-label" for="wt_2">Voldoende</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="wt_3" name="werktempo">
+                <label class="custom-control-label" for="wt_3">Zwak</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="wt_4" name="werktempo">
+                <label class="custom-control-label" for="wt_4">Onvoldoende</label>
+              </div>
+            </div><br>
+            <div class="leerling_punten">
+              <p>Zelfstandig werken in klas:</p>
+            </div>
+
+
+            <div class="indruk_leerling_school" id="bottom_werkhouding">
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="zwerk_1" name="zelfwerk">
+                <label class="custom-control-label" for="zwerk_1">Goed</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="zwerk_2" name="zelfwerk">
+                <label class="custom-control-label" for="zwerk_2">Voldoende</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="zwerk_3" name="zelfwerk">
+                <label class="custom-control-label" for="zwerk_3">Zwak</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="zwerk_4" name="zelfwerk">
+                <label class="custom-control-label" for="zwerk_4">Onvoldoende</label>
+              </div>
+            </div><br>
+          </div>
+
+
+          <div class="instelling_leerling">
+            <div class="instelling_leerling_title">
+              <p style="margin: 0;">Instelling</p>
+            </div>
+            <div class="leerling_punten">
+              <p>Motivatie:</p>
+            </div>
+
+
+            <div class="indruk_leerling_school">
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="inst_1" name="instelling">
+                <label class="custom-control-label" for="inst_1">Goed</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="inst_2" name="instelling">
+                <label class="custom-control-label" for="inst_2">Voldoende</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="inst_3" name="instelling">
+                <label class="custom-control-label" for="inst_3">Zwak</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="inst_4" name="instelling">
+                <label class="custom-control-label" for="inst_4">Onvoldoende</label>
+              </div>
+            </div><br>
+
+            <div class="leerling_punten">
+              <p>Doorzettingsvermogen:</p>
+            </div>
+
+
+            <div class="indruk_leerling_school" id="bottom_instelling">
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="doorver_1" name="doorzettingsvermogen">
+                <label class="custom-control-label" for="doorver_1">Goed</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="doorver_2" name="doorzettingsvermogen">
+                <label class="custom-control-label" for="doorver_2">Voldoende</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="doorver_3" name="doorzettingsvermogen">
+                <label class="custom-control-label" for="doorver_3">Zwak</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="doorver_4" name="doorzettingsvermogen">
+                <label class="custom-control-label" for="doorver_4">Onvoldoende</label>
+              </div>
+            </div><br>
+          </div>
+
+          <div class="vaardigheden_leerling">
+            <div class="vaardigheden_leerling_title">
+              <p style="margin: 0;">Vaardigheden</p>
+            </div>
+            <div class="leerling_punten">
+              <p>Communicatieve vaardigheden:</p>
+            </div>
+
+
+            <div class="indruk_leerling_school">
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="comv_1" name="communicatie_skills">
+                <label class="custom-control-label" for="comv_1">Goed</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="comv_2" name="communicatie_skills">
+                <label class="custom-control-label" for="comv_2">Voldoende</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="comv_3" name="communicatie_skills">
+                <label class="custom-control-label" for="comv_3">Zwak</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="comv_4" name="communicatie_skills">
+                <label class="custom-control-label" for="comv_4">Onvoldoende</label>
+              </div>
+            </div><br>
+
+            <div class="leerling_punten">
+              <p>Sociale vaardigheden:</p>
+            </div>
+
+
+            <div class="indruk_leerling_school">
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="socv_1" name="sociale_skills">
+                <label class="custom-control-label" for="socv_1">Goed</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="socv_2" name="sociale_skills">
+                <label class="custom-control-label" for="socv_2">Voldoende</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+                <input type="radio" class="custom-control-input" id="socv_3" name="sociale_skills">
+                <label class="custom-control-label" for="socv_3">Zwak</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline" style="">
+                <input type="radio" class="custom-control-input" id="socv_4" name="sociale_skills">
+                <label class="custom-control-label" for="socv_4">Onvoldoende</label>
+              </div>
+            </div><br>
+          </div>
+
+          <p id="toelichting">Toelichting:</p>
+          <div class="form-group" id="bottom_toelichting_leerling">
+            <label for="toelichting"></label>
+            <textarea class="form-control" rows="4" id="toelichting"></textarea>
+          </div>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="tl" name="example" >
-          <label class="custom-control-label" for="tl">TL</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="lwt" name="example" >
-          <label class="custom-control-label" for="tl">LWT</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="lwoo" name="example" >
-          <label class="custom-control-label" for="tl">LWOO</label>
+
+
+
+        <div class="bijzonderheden">
+
+
+
+          <div class="enige_bijzonderheden">
+            <p id="enige_bijzonderheden_title">Heeft de leerling een aandoening en/of beperking die van invloed op de studie kan zijn?</p>
+            <div class="form-group">
+              <label for="bijzonderheden_anders"></label>
+              <textarea class="form-control" rows="3" id="bijzonderheden_anders"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="leerling_bijzonderheden_title">
+            <p>Volgt de leerling speciaal onderwijs?</p>
+          </div>
+
+
+
+
+          <div class="leerling_bijzonderheden">
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="speciaal_onderwijs_ja" name="speciaal_onderwijs">
+              <label class="custom-control-label" for="speciaal_onderwijs_ja">Ja</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline" style="">
+              <input type="radio" class="custom-control-input" id="speciaal_onderwijs_nee" name="speciaal_onderwijs">
+              <label class="custom-control-label" for="speciaal_onderwijs_nee">Nee</label>
+            </div>
+
+          </div>
+          <br>
+
+
+
+          <div class="leerling_bijzonderheden_title">
+            <p class="kleine_tekst">Heeft de student dyslexie?</p>
+            <p class="leerling_bijzonderheden_title_extra">(bij plaatsing inleveren dyslexieverklaring verplicht)</p>
+          </div>
+
+          <div class="leerling_bijzonderheden">
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="dyslexie_ja" name="dyslexie">
+              <label class="custom-control-label" for="dyslexie_ja">Ja</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline" style="">
+              <input type="radio" class="custom-control-input" id="dyslexie_nee" name="dyslexie">
+              <label class="custom-control-label" for="dyslexie_nee">Nee</label>
+            </div>
+          </div>
+          <br>
+
+
+
+          <div class="leerling_bijzonderheden_title">
+            <p class="kleine_tekst">Heeft de student dyscalculie?</p>
+            <p class="leerling_bijzonderheden_title_extra">(bij plaatsing inleveren dyscalculieverklaring verplicht)</p>
+          </div>
+
+          <div class="leerling_bijzonderheden">
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="dyscalculie_ja" name="dyscalculie">
+              <label class="custom-control-label" for="dyscalculie_ja">Ja</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline" style="">
+              <input type="radio" class="custom-control-input" id="dyscalculie_nee" name="dyscalculie">
+              <label class="custom-control-label" for="dyscalculie_nee">Nee</label>
+            </div>
+          </div>
+          <br>
+          <div class="leerling_bijzonderheden_title">
+            <p>Is de leerling recent besproken in get extern zorg- en adviesteam (ZAT)?</p>
+          </div>
+
+
+
+
+          <div class="leerling_bijzonderheden">
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="besproken_zw_ja" name="besproken_zw">
+              <label class="custom-control-label" for="besproken_zw_ja">Ja</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline" style="">
+              <input type="radio" class="custom-control-input" id="besproken_zw_nee" name="besproken_zw">
+              <label class="custom-control-label" for="besproken_zw_nee">Nee</label>
+            </div>
+
+          </div>
+
+          <br>
+          <div class="leerling_bijzonderheden_title">
+            <p>Ontvangt de leerling nog andere zorg?</p>
+          </div>
+
+
+
+
+          <div class="leerling_bijzonderheden">
+            <div class="custom-control custom-radio custom-control-inline" style="margin: 0 auto;">
+              <input type="radio" class="custom-control-input" id="andere_zorg_ja" name="andere_zorg">
+              <label class="custom-control-label" for="andere_zorg_ja">Ja</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline" style="">
+              <input type="radio" class="custom-control-input" id="andere_zorg_nee" name="andere_zorg">
+              <label class="custom-control-label" for="andere_zorg_nee">Nee</label>
+            </div>
+
+          </div><br>
+          <div class="leerling_bijzonderheden_title">
+            <p class="kleine_tekst">Zijn er andere bijzondere persoonlijke omstandigheden waarvan de school op de hoogte moet zijn?</p>
+            <p class="leerling_bijzonderheden_title_extra">(Hieronder verstaat het Mediacollege Amsterdam bijzonderheden/beperkingen die van invloed kunnen zijn op het succesvol volgen van de opleiding zoals o.a. epilepsie, slechthorendheid, ADHD, suikerziekte etc.)</p>
+          </div>
+          <div class="form-group">
+            <label for="bijzondere_po"></label>
+            <textarea class="form-control" rows="5" id="bijzondere_po"></textarea>
+          </div>
+
+
         </div>
       </div>
+-->
+      <!-- TAB 4 -->
+      <div class="tab" id="tab4">
+        <div class="gegevens_leraar">
+          <div class="form-group">
+            <h3 class="page1">Gegevens Decaan/Leraar</h3>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="voornaam_leraar">Voornaam:</label>
+            <input type="text" placeholder="Voornaam" class="form-control" id="voornaam_leraar" oninput="this.className = 'form-control'">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="tussenvoegsel_leraar">Tussenvoegsel:</label>
+            <input type="text" name="extra_leraar" placeholder="Tussenvoegsel" class="form-control" id="tussenvoegsel_leraar" oninput="this.className = 'form-control'">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="achternaam_leraar">Achternaam:</label>
+            <input type="text" placeholder="Achternaam" class="form-control" id="achternaam_leraar" oninput="this.className = 'form-control'">
+          </div>
+          <div class="form-group">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="customRadio_leraar1" name="leraar_geslacht">
+              <label class="custom-control-label" for="customRadio_leraar1">Man</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="customRadio_leraar2" name="leraar_geslacht">
+              <label class="custom-control-label" for="customRadio_leraar2">Vrouw</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="functie">Functie:</label>
+            <input type="text" placeholder="Functie" class="form-control" id="functie" oninput="this.className = 'form-control'">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="emailadres">E-mailadres:</label>
+            <input type="text" placeholder="E-mailadres" class="form-control" id="emailadres" oninput="this.className = 'form-control'">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="naam_school">Naam school:</label>
+            <input type="text" placeholder="Naam school" class="form-control" id="naam_school" oninput="this.className = 'form-control'">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="plaats">Plaats:</label>
+            <input type="text" placeholder="Plaats" class="form-control" id="plaats" oninput="this.className = 'form-control'">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="telefoon_leraar">Telefoon:</label>
+            <input type="text" placeholder="Telefoon" class="form-control" id="telefoon_leraar" oninput="this.className = 'form-control'">
+          </div>
+
+          <p class="form-group" id="tele_contact">Telefonisch contact gewenst?</p>
+          <div class="form-group">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="customRadio_telefoon_leraar1" name="telefoon_leraar">
+              <label class="custom-control-label" for="customRadio_telefoon_leraar1">Ja</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="customRadio_telefoon_leraar2" name="telefoon_leraar">
+              <label class="custom-control-label" for="customRadio_telefoon_leraar2">Nee</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEXT PREVIOUS BUTTONS -->
+
       <div class="next-previous">
-        <i class="fas fa-arrow-circle-left"  id="arrow-left" onclick="nextPrev(-1)"></i>
+        <i class="fas fa-arrow-circle-left" id="arrow-left" onclick="nextPrev(-1)"></i>
         <i class="fas fa-arrow-circle-right" id="arrow-right" onclick="nextPrev(1)"></i>
       </div>
       <div class="form-group" id="form-group-progressbar">
         <ul id="progressbar">
-          <li class="step"></li>
           <li class="step"></li>
           <li class="step"></li>
           <li class="step"></li>
@@ -98,7 +613,7 @@
   </div>
 
 
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="javascript/main.js"></script>
 </body>
 
