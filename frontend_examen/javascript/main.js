@@ -8,6 +8,7 @@ function showTab(n) {
   // ... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("arrow-left").style.display = "none";
+
   } else {
     document.getElementById("arrow-left").style.display = "inline";
   }
@@ -34,6 +35,7 @@ function nextPrev(n) {
     //...the form gets submitted:
     document.getElementById("inschrijf_formulier").submit();
     return false;
+    alert("Bedankt voor het invullen van het Formulier!")
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
@@ -44,6 +46,8 @@ function validateForm() {
   var x, y, c, i, valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
+  var gleerling = document.getElementById("geslacht_leerling");
+  var radios = document.getElementsByName("geslacht_leerling_radio")
   // c = document.getElementsByClassName("custom-control-inline")
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
@@ -54,19 +58,19 @@ function validateForm() {
       // and set the current valid status to false:
       valid = false;
     }
+}
 
-  }
-  
-    // if (i == 1) {
+
+    // if (i == 0) {
     //   valid = true;
     // }
-    // else if(i == 3 && y[3].checked == false) {
+    // else if(i == 4 && y[4].checked == false) {
     //   valid = false;
     //   y[i].className += " invalid";
     //
-    // }
+    // }}
     // If a field is empty...
-    // else
+
 
 
 
@@ -74,6 +78,7 @@ function validateForm() {
   if (valid) {
 
     document.getElementsByClassName("step")[currentTab].className += " finish";
+    window.scrollTo(0, 0);
   }
   return valid; // return the valid status
 }
