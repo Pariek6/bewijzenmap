@@ -4,59 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Het is hier mogelijk om het inlichtingen formulier voor het Mediacollege Amsterdam in te vullen.">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/large_mobile.css" type="text/css">
+  <link rel="stylesheet" href="css/desktop.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <script src="bootstrap/js/bootstrap.bundle.js"></script>
+
   <title>InvulFormulier</title>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-sm bg-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inlichtingen formulier</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="beheerpagina.html">Beheerpagina</a>
+      </li>
+
+    </ul>
+  </nav>
   <div class="container-fluid">
-    <h2>Inlichtingen Formulier</h2>
+    <h1>Inlichtingen Formulier</h1>
     <form id="inschrijf_formulier" action="">
 
       <!-- TAB 1  -->
 
-      <!-- <div class="tab" id="tab1">
+      <div class="tab" id="tab1">
 
         <div class="form-group">
-          <h3 class="page1">Gegevens Student</h3>
+          <h2 class="page1">Gegevens Student</h2>
         </div>
+        <div class="gegevens_student">
         <div class="form-group">
           <label class="sr-only" for="voornaam">Voornaam:</label>
           <input type="text" placeholder="Voornaam" class="form-control" id="voornaam" oninput="this.className = 'form-control'">
         </div>
         <div class="form-group">
-          <label class="sr-only" for="tussenvoegsel">Tussenvoegsel:</label>
-          <input type="text" name="extra" placeholder="Tussenvoegsel" class="form-control" id="tussenvoegsel" oninput="this.className = 'form-control'">
-        </div>
-        <div class="form-group">
           <label class="sr-only" for="achternaam">Achternaam:</label>
           <input type="text" placeholder="Achternaam" class="form-control" id="achternaam" oninput="this.className = 'form-control'">
         </div>
+        <p class="form-group" id="geslacht_leerling">Geslacht</p>
         <div class="form-group">
           <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" class="custom-control-input" id="customRadio1" name="example">
+            <input type="radio" class="custom-control-input" id="customRadio1" name="geslacht_leerling_radio">
             <label class="custom-control-label" for="customRadio1">Man</label>
           </div>
 
           <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" class="custom-control-input" id="customRadio2" name="example">
+            <input type="radio" class="custom-control-input" id="customRadio2" name="geslacht_leerling_radio">
             <label class="custom-control-label" for="customRadio2">Vrouw</label>
           </div>
-        </div>
+            </div>
         <div class="form-group">
           <label class="sr-only" for="geboortedatum">Geboortedatum:</label>
           <input type="text" placeholder="Geboortedatum" class="form-control" id="geboortedatum" oninput="this.className = 'form-control'">
         </div>
-      </div> -->
+
+      </div>
+      </div>
 
       <!-- TAB 2 -->
 
-      <!-- <div class="tab" id="tab2">
+      <div class="tab" id="tab2">
         <div class="form-group">
-          <h3 class="page2">Welke opleiding volgt de leerling?</h3>
+          <h2 class="page2">Welke opleiding volgt de leerling?</h2>
         </div>
 
 
@@ -156,8 +171,8 @@
             <textarea class="form-control" rows="2" id="vmbo_diploma_behaald"></textarea>
           </div>
           <p class="overgangsbewijs_havo-vwo">Overgangsbewijs van leerjaar
-            <input type="text" name="quantity"> naar leerjaar
-            <input type="text" name="quantity"></p>
+            <input type="text" class="overgang_leerjaar" > naar leerjaar
+            <input type="text" class="overgang_leerjaar" ></p>
         </div>
 
 
@@ -203,11 +218,11 @@
           </div>
         </div>
 
-      </div> -->
+      </div>
 
       <!-- TAB 3 -->
 
-       <!-- <div class="tab" id="tab3">
+       <div class="tab" id="tab3">
 
 
 
@@ -215,7 +230,7 @@
 
 
           <div class="form-group">
-            <h3 class="page3">Indruk op school en bijzonderheden van de leerling</h3><br>
+            <h2 class="page3">Indruk op school en bijzonderheden van de leerling</h2><br>
           </div>
 
           <div class="werkhouding_leerling">
@@ -530,25 +545,23 @@
 
         </div>
       </div>
--->
+
       <!-- TAB 4 -->
       <div class="tab" id="tab4">
-        <div class="gegevens_leraar">
+
           <div class="form-group">
-            <h3 class="page1">Gegevens Decaan/Leraar</h3>
+            <h2 class="page1">Gegevens Decaan/Leraar</h2>
           </div>
+            <div class="gegevens_leraar">
           <div class="form-group">
             <label class="sr-only" for="voornaam_leraar">Voornaam:</label>
             <input type="text" placeholder="Voornaam" class="form-control" id="voornaam_leraar" oninput="this.className = 'form-control'">
           </div>
           <div class="form-group">
-            <label class="sr-only" for="tussenvoegsel_leraar">Tussenvoegsel:</label>
-            <input type="text" name="extra_leraar" placeholder="Tussenvoegsel" class="form-control" id="tussenvoegsel_leraar" oninput="this.className = 'form-control'">
-          </div>
-          <div class="form-group">
             <label class="sr-only" for="achternaam_leraar">Achternaam:</label>
             <input type="text" placeholder="Achternaam" class="form-control" id="achternaam_leraar" oninput="this.className = 'form-control'">
           </div>
+          <p class="form-group" id="geslacht_leraar">Geslacht</p>
           <div class="form-group">
             <div class="custom-control custom-radio custom-control-inline">
               <input type="radio" class="custom-control-input" id="customRadio_leraar1" name="leraar_geslacht">
@@ -563,6 +576,7 @@
             <label class="sr-only" for="functie">Functie:</label>
             <input type="text" placeholder="Functie" class="form-control" id="functie" oninput="this.className = 'form-control'">
           </div>
+
           <div class="form-group">
             <label class="sr-only" for="emailadres">E-mailadres:</label>
             <input type="text" placeholder="E-mailadres" class="form-control" id="emailadres" oninput="this.className = 'form-control'">
@@ -592,6 +606,8 @@
             </div>
           </div>
         </div>
+
+
       </div>
 
       <!-- NEXT PREVIOUS BUTTONS -->
@@ -613,7 +629,7 @@
   </div>
 
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="javascript/main.js"></script>
 </body>
 
