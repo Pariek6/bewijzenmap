@@ -1,0 +1,55 @@
+@media only screen and (min-width: 768px) {
+
+
+    h1 {
+          margin: 5%;
+    }
+    h2 {
+      margin-top: 4%;
+      padding-bottom: 4%;
+    }
+
+    #inschrijf_formulier {
+      margin: 0 auto;
+      width: 40%;
+    }
+
+    #progressbar {
+      padding: 40px 0px;
+    }
+
+    .step {
+      width: 40px;
+      height: 40px;
+
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  #inschrijf_formulier {
+
+  }
+
+  .gegevens_student {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #geslacht_leerling {
+
+  }
+
+  .gegevens_leraar {
+    margin-top:5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #submit {
+    margin-left: 43%;
+  }
+
+
+}
